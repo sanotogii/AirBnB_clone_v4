@@ -37,10 +37,10 @@ def hbnb():
     places = sorted(places, key=lambda k: k.name)
 
     return render_template('1-hbnb.html',
+                           cache_id=uuid4(),
                            states=st_ct,
                            amenities=amenities,
-                           places=places,
-                           cache_id=uuid4())
+                           places=places)
 
 
 if __name__ == "__main__":
