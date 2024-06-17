@@ -3,13 +3,16 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
+    display: flex;
 }
+
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
+    width: 75%;
 }
-#api_status {
+header #api_status {
     text-align: right;
     right: 30px;
     height: 40px;
@@ -18,9 +21,11 @@ header .logo {
     position: absolute;
     top: 16px;
     background-color: #cccccc;
+    margin-right: 30px;
+    place-self: center;
 }
 
-#api_status.available {
+header #api_status.available {
     background-color: #ff545f;
 }
 
